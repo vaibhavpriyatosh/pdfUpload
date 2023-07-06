@@ -1,0 +1,23 @@
+server:
+  port: 8085
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: game10122
+    url: jdbc:mysql://localhost:3306/files_storing
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 4KB
+      max-file-size: 200MB
+      max-request-size: 215MB
+
+welcome:
+  message: Welcome to Developer!!
